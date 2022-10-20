@@ -5,41 +5,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="img\icons\page-logo.png">
     <link rel="stylesheet" href="css\style.css">
-    <title>Hasan Al Zaibak</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&family=Spectral:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <title>Meu Portfolio</title>
 </head>
 
 <body>
     <audio src="aud\Intro.mp3" autoplay></audio>
-    <aside>
-        <div><img src="img\icons\LogoGray.svg" alt="logo"></div>
-        <div>
-            <ul>
-                <li><a href="#"><img src="img\icons\linkedin.svg" alt="linkedin logo"></a></li>
-                <li><a href="#"><img src="img\icons\instagram.svg" alt="instagrgam logo"></a></li>
-                <li><a href="#"><img src="img\icons\Twitter.svg" alt="twitter logo"></a></li>
-                <li><a href="#"><img src="img\icons\github.svg" alt="github logo"></a></li>
-                <li><a href="#"><img src="img\icons\codepen.svg" alt="codepen logo"></a></li>
+    <!--THE SIDE BAR-->
+    <aside class="sidebar">
+        <div><a href="https://hasanalzaibak.github.io/portfolio.github.io/"><img src="img\icons\LogoGray.svg" alt="logo" class="sidebar-logo"></a></div>
+        <div class="sidebar-links">
+            <ul class="sidebar-links-list">
+                <li><a href="https://www.linkedin.com/in/alzaibak" target="_blank"><img src="img\icons\linkedin.svg" alt="linkedin logo"></a></li>
+                <li><a href="https://www.instagram.com/al.zaibak/" target="_blank"><img src="img\icons\instagram.svg" alt="instagrgam logo"></a></li>
+                <li><a href="https://twitter.com/hasanalzaibak" target="_blank"><img src="img\icons\Twitter.svg" alt="twitter logo"></a></li>
+                <li><a href="https://github.com/hasanalzaibak" target="_blank"><img src="img\icons\github.svg" alt="github logo"></a></li>
+                <li><a href="https://codepen.io/hasanalzaibak" target="_blank"><img src="img\icons\codepen.svg" alt="codepen logo"></a></li>
             </ul>
         </div>
     </aside>
-    <main>
-        <nav>
-            <ul>
-                <li>Sobre mim</li>
-                <li>Minhas habilidades</li>
-                <li>Contate-me</li>
+    <!--THE MAIN CONTENT-->
+    <main class="principal">
+
+    <!--Nvaigation Bar and Introduction Container-->
+    <div class="container">
+        <!--THE NAVIGATION BAR-->
+        <nav class="navigation">
+            <ul class="navigation-list">
+                <li><a href="#about">Sobre mim</a></li>
+                <li><a href="#skills">Minhas habilidades</a></li>
+                <li><a href="#contact">Contate-me</a></li>
             </ul>
         </nav>
-        <section>
-            <div>
-                <h1>Sou um Front-End Desenvolvedor Web</h1>
+        <!--THE INTRODUCTION-->
+        <section class="introduction">
+            <div class="introduction-text">
+                <h1>Sou um Desenvolvedor Web Front-End</h1>
                 <p>localizado em São Paulo. Sou novo nesta área, mas sempre fui um geek de tecnologia.</p>
             </div>
-            <div><img src="img\port\1.png" alt="personal portrait"></div>
+            <div class="introduction-image">
+                <img src="img\port\2.png" alt="personal portrait">
+            </div>
         </section>
-        <section>
-            <div>
+    </div>
+        <!--THE ABOUT ME-->
+        <section class="about" id="about">
+            <div class="about-image"><img src="img\icons\school.png" alt="university icon"></div>
+            <div class="about-text">
                 <h2>Sobre mim</h2>
                 <p>Saudações. Meu nome é Hasan Al Zaibak e sou originalmente da Síria. Gosto de atividades criativas e
                     pensamento filosófico profundo. Minhas experiências anteriores são baseadas na área da saúde. Sou
@@ -47,25 +65,32 @@
                     ensino, educação e pesquisa científica. Além disso, trabalhei como representante de suporte ao
                     cliente para o site Gearbest durante os anos de meus estudos. Eu falo árabe, inglês e português.</p>
             </div>
-            <div><img src="img\icons\School.svg" alt="university icon"></div>
+
         </section>
-        <section>
-            <div><img src="img\icons\skills.svg" alt="skills icon"></div>
-            <div>
+        <!--THE SKILLS-->
+        <section class="skills" id="skills">
+            <div class="skills-text">
                 <h2>Minhas habilidades</h2>
                 <p>Eu aprendo rápido e tenho um bom desempenho sozinho ou em equipe. Tenho boa experiência com HTML5,
                     CSS3, GIT, VS Code e estou aprendendo JavaScript, React, teste de software e API Rest. Meu foco
                     principal é Front-End. Tenho habilidades básicas com Adobe Photoshop, Figma e desenho gráfico.</p>
             </div>
+            <div class="skills-image"><img src="img\icons\skills.png" alt="skills icon"></div>
         </section>
-        <section>
-                <h2>Contate-me</h2>
-                <p>Estou interessado em ofertas de emprego, trabalhos freelance e projetos criativos. Se houver alguma
-                    dúvida ou solicitação, não hesite em me enviar.
-                </p>
-                <input type="button" value="Diga oi!">
+        <!--THE CONTACT ME-->
+        <section class="contact" id="contact">
+            <h2>Contate-me</h2>
+            <p>Estou interessado em ofertas de emprego, trabalhos freelance e projetos criativos. Se houver alguma
+                dúvida ou solicitação, não hesite em me enviar.
+            </p>
+            <input class="contact-button" type="button" value="Diga Oi!">
+        </section>
+        <!--THE COPYRIGHTS-->
+        <section class="copyrights">
+            <p>&#169 Desenvolvido e Desenhado por Hasan Al Zaibak - 2022</p>
         </section>
     </main>
+
 </body>
 
 </html>
