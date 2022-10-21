@@ -6,21 +6,21 @@
 body {
     display: flex;
     background-color: rgb(30, 30, 30);
-    color: rgb(100, 255, 252);
+    color: rgb(211, 211, 211);
     font-family: 'Rubik', sans-serif
 }
 
 h1,
 h2 {
     font-family: 'Spectral', serif;
-    color: rgb(169, 255, 254);
+    color: rgb(255, 255, 255);
 }
 
 .sidebar {
     padding: 0.5rem;
     height: 99vh;
     max-width: 7vh;
-    background-color: rgb(222, 255, 254);
+    background-color: rgb(211, 211, 211);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -61,7 +61,7 @@ main {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     transition: 200ms;
-    border-bottom: 3px solid rgb(222, 255, 254);
+    border-bottom: 3px solid rgb(255, 255, 255);
 }
 
 .navigation-list:hover {
@@ -77,9 +77,9 @@ nav ul li a {
     transition: 200ms;
 }
 
-nav ul li a:active {
-    color: rgb(222, 255, 254);
-    text-shadow: 0px 1px 20px rgb(222, 255, 254);
+nav ul li a:hover {
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 1px 20px rgb(255, 255, 255);
 }
 
 
@@ -87,7 +87,7 @@ nav ul li a:active {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border-bottom: 3px solid rgb(222, 255, 254);
+    border-bottom: 3px solid rgb(255, 255, 255);
 
 }
 
@@ -115,7 +115,7 @@ h2 {
     padding: 8rem;
     background-color: rgb(73, 85, 85);
     align-items: center;
-    border-bottom: 3px solid rgb(222, 255, 254);
+    border-bottom: 3px solid rgb(255, 255, 255);
 }
 
 .about-image {
@@ -127,7 +127,7 @@ h2 {
     padding: 8rem;
     border-radius: 2rem;
     transition: 200ms;
-    border-bottom: 3px solid rgb(222, 255, 254);
+    border-bottom: 3px solid rgb(255, 255, 255);
 }
 
 .about-text p {
@@ -142,14 +142,14 @@ h2 {
     display: flex;
     padding: 8rem;
     align-items: center;
-    border-bottom: 3px solid rgb(222, 255, 254);
+    border-bottom: 3px solid rgb(255, 255, 255);
 }
 
 .skills-text {
     padding: 8rem;
     border-radius: 2rem;
     transition: 200ms;
-    border-top: 3px solid rgb(222, 255, 254);
+    border-top: 3px solid rgb(255, 255, 255);
 }
 
 .skills-text p {
@@ -172,7 +172,7 @@ h2 {
     justify-content: center;
     padding: 8rem;
     background-color: rgb(73, 85, 85);
-    border-bottom: 3px solid rgb(222, 255, 254);
+    border-bottom: 3px solid rgb(255, 255, 255);
     transition: 200ms;
 
 }
@@ -189,7 +189,7 @@ h2 {
     width: 8rem;
     height: 3rem;
     margin-top: 2rem;
-    background-color: rgb(222, 255, 254);
+    background-color: rgb(255, 255, 255);
     border: none;
     border-radius: 0.7rem;
     font-family: 'Rubik', sans-serif;
@@ -199,11 +199,8 @@ h2 {
 }
 
 .contact-button:hover {
-    transform: scale(110%);  
-}
-
-.contact-button:active {
-    box-shadow:  0px 1px 20px rgb(222, 255, 254);
+    transform: scale(110%);
+    box-shadow:  0px 1px 20px rgb(255, 255, 255);
 }
 
 .copyrights {
