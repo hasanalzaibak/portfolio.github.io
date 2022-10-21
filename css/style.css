@@ -62,11 +62,9 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    line-height: 3rem;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    line-height: 16px;
     transition: 200ms;
-    border-bottom: 3px solid rgb(211, 211, 211);
+    height: 6rem;
 }
 
 .navigation-list:hover {
@@ -91,52 +89,53 @@ nav ul li a:hover {
 .introduction {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    border-bottom: 3px solid rgb(211, 211, 211);
-
+    justify-content: space-between;
 }
 
 h1 {
     font-size: 3rem;
-    line-height: 96px;
-    margin-left: -20px;
+    line-height: 64px;
+    margin-bottom: 2rem;
 }
 
 h2 {
     font-size: 2.5rem;
-    line-height: 96px;
-    margin-left: -20px;
+    line-height: 16px;
+    margin-bottom: 3rem;
 }
 
 .introduction-text {
     transition: 200ms;
     padding: 5rem;
-    border-radius: 0.5rem;
+    border-radius: 0.3rem;
 }
 
 .introduction-text:hover {
     background-color: rgba(0, 0, 0, 0.9);
 }
 
+.introduction-image {
+    margin-bottom: -1rem;
+}
+
 .about {
     display: flex;
     padding: 4rem;
     background: linear-gradient(280deg, rgba(211,211,211,1) 50%, rgba(83,83,83,1) 50%);
-    border-bottom: 3px solid rgb(211, 211, 211);
     justify-content: space-between;
     align-items: flex-start;
 }
 
 .about-text {
     padding: 8rem;
-    border-radius: 0.5rem;
+    border-radius: 0.3rem;
     transition: 200ms;
-    border-bottom: 2px solid rgb(211, 211, 211);
+    border-bottom: 5px solid rgb(211, 211, 211);
     max-width: 30%;
-}
+}   
 
 p {
-    line-height: 32px;
+    line-height: 28px;
 }
 
 .about-text:hover {
@@ -145,12 +144,12 @@ p {
 
 .skills-text {
     padding: 8rem;
-    border-radius: 0.5rem;
+    border-radius: 0.3rem;
     transition: 200ms;
-    border-top: 2px solid rgba(83,83,83,1);
+    border-top: 5px solid rgba(83,83,83,1);
     max-width: 30%;
     color: rgba(83,83,83,1);
-    padding-bottom: 14rem;
+    padding-bottom: 13.3rem;
 }
 
 .skills-text h2 {
@@ -166,15 +165,14 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 8rem;
+    padding: 4rem;
     background-color: rgb(83, 83, 83);
-    border-bottom: 3px solid rgb(211, 211, 211);
     transition: 200ms;
 
 }
 
 .contact p {
-    line-height: 32px;
+    line-height: 28px;
 }
 
 .contact:hover {
@@ -184,12 +182,12 @@ p {
 .contact-button {
     width: 8rem;
     height: 3rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
     background-color: rgb(255, 255, 255);
     border: none;
     border-radius: 0.3rem;
     font-family: 'Rubik', sans-serif;
-    line-height: 32px;
+    line-height: 28px;
     font-weight: 400;
     transition: 200ms;
 }
@@ -200,7 +198,7 @@ p {
 }
 
 .copyrights {
-    line-height: 32px;
+    line-height: 28px;
     padding: 1rem;
     margin: 0 auto;
     color: rgba(83,83,83,1);
