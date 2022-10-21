@@ -3,9 +3,14 @@
     margin: 0px;
 }
 
+*::selection {
+    color: rgb(51, 51, 51);
+    background-color: rgb(211, 211, 211);
+}
+
 body {
     display: flex;
-    background-color: rgb(30, 30, 30);
+    background-color: rgb(211, 211, 211);
     color: rgb(211, 211, 211);
     font-family: 'Rubik', sans-serif
 }
@@ -61,11 +66,11 @@ main {
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
     transition: 200ms;
-    border-bottom: 3px solid rgb(255, 255, 255);
+    border-bottom: 3px solid rgb(211, 211, 211);
 }
 
 .navigation-list:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 nav ul li a {
@@ -87,82 +92,73 @@ nav ul li a:hover {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border-bottom: 3px solid rgb(255, 255, 255);
+    border-bottom: 3px solid rgb(211, 211, 211);
 
 }
 
 h1 {
     font-size: 3rem;
+    line-height: 96px;
+    margin-left: -20px;
 }
 
 h2 {
     font-size: 2.5rem;
-    line-height: 64px;
+    line-height: 96px;
+    margin-left: -20px;
 }
 
 .introduction-text {
     transition: 200ms;
     padding: 5rem;
-    border-radius: 2rem;
+    border-radius: 0.5rem;
 }
 
 .introduction-text:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .about {
     display: flex;
-    padding: 8rem;
-    background-color: rgb(73, 85, 85);
-    align-items: center;
-    border-bottom: 3px solid rgb(255, 255, 255);
-}
-
-.about-image {
-    margin-right: 6rem;
-    margin-left: 2rem;
+    padding: 4rem;
+    background: linear-gradient(280deg, rgba(211,211,211,1) 50%, rgba(83,83,83,1) 50%);
+    border-bottom: 3px solid rgb(211, 211, 211);
+    justify-content: space-between;
+    align-items: flex-start;
 }
 
 .about-text {
     padding: 8rem;
-    border-radius: 2rem;
+    border-radius: 0.5rem;
     transition: 200ms;
-    border-bottom: 3px solid rgb(255, 255, 255);
+    border-bottom: 2px solid rgb(211, 211, 211);
+    max-width: 30%;
 }
 
-.about-text p {
+p {
     line-height: 32px;
 }
 
 .about-text:hover {
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-.skills {
-    display: flex;
-    padding: 8rem;
-    align-items: center;
-    border-bottom: 3px solid rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 .skills-text {
     padding: 8rem;
-    border-radius: 2rem;
+    border-radius: 0.5rem;
     transition: 200ms;
-    border-top: 3px solid rgb(255, 255, 255);
+    border-top: 2px solid rgba(83,83,83,1);
+    max-width: 30%;
+    color: rgba(83,83,83,1);
+    padding-bottom: 14rem;
 }
 
-.skills-text p {
-    line-height: 32px;
+.skills-text h2 {
+    color: rgb(51, 51, 51);
 }
 
 .skills-text:hover {
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-.skills-image {
-    margin-left: 6rem;
-    margin-right: 2rem;
+    background-color: rgb(255, 255, 255);
 }
 
 .contact {
@@ -171,8 +167,8 @@ h2 {
     align-items: center;
     justify-content: center;
     padding: 8rem;
-    background-color: rgb(73, 85, 85);
-    border-bottom: 3px solid rgb(255, 255, 255);
+    background-color: rgb(83, 83, 83);
+    border-bottom: 3px solid rgb(211, 211, 211);
     transition: 200ms;
 
 }
@@ -182,7 +178,7 @@ h2 {
 }
 
 .contact:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.95);
 }
 
 .contact-button {
@@ -191,7 +187,7 @@ h2 {
     margin-top: 2rem;
     background-color: rgb(255, 255, 255);
     border: none;
-    border-radius: 0.7rem;
+    border-radius: 0.3rem;
     font-family: 'Rubik', sans-serif;
     line-height: 32px;
     font-weight: 400;
@@ -200,11 +196,12 @@ h2 {
 
 .contact-button:hover {
     transform: scale(110%);
-    box-shadow:  0px 1px 20px rgb(255, 255, 255);
+    box-shadow:  0px 1px 8px rgb(255, 255, 255);
 }
 
 .copyrights {
     line-height: 32px;
     padding: 1rem;
     margin: 0 auto;
+    color: rgba(83,83,83,1);
 }
