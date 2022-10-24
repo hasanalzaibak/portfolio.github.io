@@ -10,7 +10,7 @@
 
 body {
     display: flex;
-    background-color: rgb(211, 211, 211);
+    background-color: rgba(211, 211, 211, 0);
     color: rgb(211, 211, 211);
     font-family: 'Rubik', sans-serif
 }
@@ -22,21 +22,19 @@ h2 {
 }
 
 .sidebar {
-    padding: 0.5rem;
+    padding: 0.5%;
     height: 99vh;
-    max-width: 7vh;
+    width: 3%;
     background-color: rgb(211, 211, 211);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     position: fixed;
-
 }
 
 .sidebar-logo {
-    width: 5rem;
-    max-width: 15vh;
+    width: 100%;
 }
 
 li {
@@ -48,14 +46,15 @@ li {
 }
 
 main {
-    margin-left: 5rem;
+    margin-left: 3%;
     display: flex;
     flex-direction: column;
-
 }
 
 .container {
     background-image: url(../img/bg/2.jpg);
+    background-position: center;
+    background-size: contain;
 }
 
 .navigation-list {
@@ -93,14 +92,14 @@ nav ul li a:hover {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 3em;
     line-height: 64px;
     margin-bottom: 2rem;
 }
 
 h2 {
     font-size: 2.5rem;
-    line-height: 16px;
+    line-height: 44px;
     margin-bottom: 3rem;
 }
 
@@ -121,18 +120,18 @@ h2 {
 .about {
     display: flex;
     padding: 4rem;
-    background: linear-gradient(280deg, rgba(211,211,211,1) 50%, rgba(83,83,83,1) 50%);
+    background: linear-gradient(280deg, rgba(211, 211, 211, 1) 50%, rgba(83, 83, 83, 1) 50%);
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
 }
 
 .about-text {
-    padding: 8rem;
+    padding: 7%;
     border-radius: 0.3rem;
     transition: 200ms;
     border-bottom: 5px solid rgb(211, 211, 211);
     max-width: 30%;
-}   
+}
 
 p {
     line-height: 28px;
@@ -143,13 +142,12 @@ p {
 }
 
 .skills-text {
-    padding: 8rem;
+    padding: 7%;
     border-radius: 0.3rem;
     transition: 200ms;
-    border-top: 5px solid rgba(83,83,83,1);
+    border-top: 5px solid rgba(83, 83, 83, 1);
     max-width: 30%;
-    color: rgba(83,83,83,1);
-    padding-bottom: 13.3rem;
+    color: rgba(83, 83, 83, 1);
 }
 
 .skills-text h2 {
@@ -159,6 +157,7 @@ p {
 .skills-text:hover {
     background-color: rgb(255, 255, 255);
 }
+
 
 .contact {
     display: flex;
@@ -194,12 +193,14 @@ p {
 
 .contact-button:hover {
     transform: scale(110%);
-    box-shadow:  0px 1px 8px rgb(255, 255, 255);
+    box-shadow: 0px 1px 8px rgb(255, 255, 255);
 }
 
 .copyrights {
     line-height: 28px;
     padding: 1rem;
-    margin: 0 auto;
-    color: rgba(83,83,83,1);
+    color: rgba(83, 83, 83, 1);
+    background-color: rgb(211, 211, 211);
+    width: 100%;
+    text-align: center;
 }
