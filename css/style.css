@@ -22,8 +22,8 @@ h2 {
 }
 
 .sidebar {
-    padding: 0.5%;
-    height: 99vh;
+    padding: 0.1%;
+    height: 100%;
     width: 3%;
     background-color: rgb(211, 211, 211);
     display: flex;
@@ -100,7 +100,7 @@ h1 {
 h2 {
     font-size: 2.5rem;
     line-height: 44px;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .introduction-text {
@@ -129,7 +129,7 @@ h2 {
     padding: 7%;
     border-radius: 0.3rem;
     transition: 200ms;
-    border-bottom: 5px solid rgb(211, 211, 211);
+    border-bottom: 10px solid rgb(211, 211, 211);
     max-width: 30%;
 }
 
@@ -145,7 +145,7 @@ p {
     padding: 7%;
     border-radius: 0.3rem;
     transition: 200ms;
-    border-top: 5px solid rgba(83, 83, 83, 1);
+    border-top: 10px solid rgba(83, 83, 83, 1);
     max-width: 30%;
     color: rgba(83, 83, 83, 1);
 }
