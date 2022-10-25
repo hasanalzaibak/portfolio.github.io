@@ -43,6 +43,13 @@ li {
 
 .sidebar-links-list li a img {
     width: 100%;
+    display: inline-block;
+    transition: 200ms;
+}
+
+.sidebar-links-list li a img:hover {
+    transform: translate(10px, 0px);
+
 }
 
 main {
@@ -77,22 +84,29 @@ nav ul li a {
     margin-left: 0.25rem;
     margin-right: 0.25rem;
     transition: 200ms;
+    display: inline-block;
+
 }
 
 nav ul li a:hover {
     color: rgb(255, 255, 255);
-    text-shadow: 0px 1px 20px rgb(255, 255, 255);
+
+    transform: translate(0, -10px);
 }
 
+nav ul li a:active {
+    transform: scale(95%);
+}
 
 .introduction {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 3rem;
     line-height: 64px;
     margin-bottom: 2rem;
 }
@@ -116,6 +130,8 @@ h2 {
 .introduction-image {
     margin-bottom: -1rem;
 }
+
+
 
 .about {
     display: flex;
@@ -192,13 +208,17 @@ p {
 }
 
 .contact-button:hover {
-    transform: scale(110%);
-    box-shadow: 0px 1px 8px rgb(255, 255, 255);
+    transform: translate(0, -10px);
+}
+
+.contact-button:active {
+    transform: scale(95%);
 }
 
 .copyrights {
     line-height: 28px;
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     color: rgba(83, 83, 83, 1);
     background-color: rgb(211, 211, 211);
     width: 100%;
