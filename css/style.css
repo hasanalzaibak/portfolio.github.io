@@ -63,7 +63,8 @@ main {
 .container {
     background-image: url(../img/bg/2.jpg);
     background-position: center;
-    background-size: contain;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .navigation-list {
