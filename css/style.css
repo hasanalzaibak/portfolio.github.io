@@ -133,6 +133,10 @@ p {
     transition: 200ms;
     padding: 5rem;
     border-radius: 0.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .introduction-text:hover {
@@ -219,6 +223,7 @@ p {
     font-weight: 400;
     transition: 200ms;
     position: relative;
+    color: rgb(83, 83, 83);
 }
 
 .contact-button:hover {
@@ -325,11 +330,19 @@ p {
         font-size: 0.8rem;
     }
 
+    nav ul li a:hover {
+        color: inherit;
+        transform: translate(0, 0px);
+    }
+
     .contact-button {
         font-size: 0.8rem;
     }
 
-   
+    .contact-button:hover {
+        transform: translate(0, 0px);
+    }
+
     .copyrights {
         display: flex;
         align-items: center;
@@ -354,9 +367,6 @@ p {
         transition: 200ms;
     }
 
-    .copyrights-links-list li a img:hover {
-        transform: translate(0px, -10px);
-    }
 
 }
 
