@@ -1,6 +1,7 @@
 * {
     padding: 0px;
     margin: 0px;
+    scroll-behavior: smooth;
 }
 
 *::selection {
@@ -229,6 +230,7 @@ p {
 
 .contact-button:hover {
     transform: translate(0, -10px);
+    color: rgba(0, 0, 0, 0.95);
 }
 
 .contact-button:active {
@@ -342,6 +344,7 @@ p {
 
     .contact-button:hover {
         transform: translate(0, 0px);
+        color: rgb(83, 83, 83);
     }
 
     .copyrights {
