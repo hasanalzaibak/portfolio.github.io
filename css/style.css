@@ -159,7 +159,7 @@ p {
     padding: 4rem;
     background: linear-gradient(280deg, rgba(211, 211, 211, 1) 50%, rgba(83, 83, 83, 1) 50%);
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     transition: 200ms;
 }
 
