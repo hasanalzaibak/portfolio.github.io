@@ -4,24 +4,24 @@
     padding: 0px;
     margin: 0px;
     scroll-behavior: smooth;
+    transition: 0.4s ease-in-out;
 }
 
 *::selection {
-    color: rgb(51, 51, 51);
-    background-color: rgb(211, 211, 211);
+    color: #F2F2F2;
+    background-color: #404040;
 }
 
 body {
     display: flex;
-    background-color: rgba(211, 211, 211, 0);
-    color: rgb(211, 211, 211);
+    color:  #F2F2F2;
     font-family: 'Roboto', sans-serif;
 }
 
 h1,
 h2 {
     font-family: 'Josefin Sans', sans-serif;
-    color: rgb(255, 255, 255);
+    color: #8AA6BF;
 
 }
 
@@ -30,8 +30,8 @@ h2 {
 .sidebar {
     padding: 0.1%;
     height: 100%;
-    width: 3%;
-    background-color: rgb(211, 211, 211);
+    width: 3.5%;
+    background-color: #BF1744;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,8 +39,13 @@ h2 {
     position: fixed;
 }
 
+.sidebar:hover {
+    background-color: #404040;
+}
+
 .sidebar-logo {
     width: 100%;
+    filter: invert(100%) sepia(49%) saturate(25%) hue-rotate(268deg) brightness(111%) contrast(90%);
 }
 
 li {
@@ -50,17 +55,19 @@ li {
 .sidebar-links-list li a img {
     width: 100%;
     display: inline-block;
-    transition: 400ms;
+    transition: 0.4s ease-in-out;
+    filter: invert(100%) sepia(49%) saturate(25%) hue-rotate(268deg) brightness(111%) contrast(90%);
 }
 
 .sidebar-links-list li a img:hover {
     transform: translate(10px, 0px);
+    filter: invert(17%) sepia(72%) saturate(3942%) hue-rotate(331deg) brightness(85%) contrast(96%);
 }
 
 /* Main Content */
 
 main {
-    margin-left: 3%;
+    margin-left: 3.5%;
     display: flex;
     flex-direction: column;
 }
@@ -79,12 +86,8 @@ main {
     align-items: center;
     justify-content: center;
     line-height: 16px;
-    transition: 600ms;
+    transition: 0.4s;
     height: 6rem;
-}
-
-.navigation-list:hover {
-    background-color: rgba(0, 0, 0, 0.9);
 }
 
 nav ul li a {
@@ -99,7 +102,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: rgb(255, 255, 255);
+    color: #BF1744;
     transform: translate(0, -10px);
 }
 
@@ -114,33 +117,38 @@ nav ul li a:active {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    transition: 600ms;
+    transition: 0.4s;
 }
 
 h1 {
     font-size: 3rem;
     line-height: 64px;
     margin-bottom: 2rem;
-    transition: 600ms;
+    transition: 0.4s;
+}
 
+h1:hover {
+    color: #BF1744;
 }
 
 h2 {
     font-size: 2.5rem;
     line-height: 44px;
     margin-bottom: 2rem;
-    transition: 600ms;
+    transition: 0.4s;
+}
 
+h2:hover {
+    color: #BF1744;
 }
 
 p {
     line-height: 28px;
-    transition: 600ms;
-
+    transition: 0.4s;
 }
 
 .introduction-text {
-    transition: 600ms;
+    transition: 0.4s;
     padding: 5rem;
     border-radius: 0.3rem;
     display: flex;
@@ -149,13 +157,9 @@ p {
     flex-direction: column;
 }
 
-.introduction-text:hover {
-    background-color: rgba(0, 0, 0, 0.9);
-}
-
 .introduction-image {
     margin-bottom: -1rem;
-    transition: 600ms;
+    transition: 0.4s;
 }
 
 .small-image {
@@ -167,39 +171,36 @@ p {
 .about {
     display: flex;
     padding: 4rem;
-    background: linear-gradient(280deg, rgba(211, 211, 211, 1) 50%, rgba(83, 83, 83, 1) 50%);
+    background: linear-gradient(280deg, #404040 50%, #0D0D0D 50%);
     justify-content: space-between;
     align-items: stretch;
-    transition: 600ms;
+    transition: 0.4s;
 }
 
 .about-text {
     padding: 7%;
     border-radius: 0.3rem;
-    transition: 600ms;
-    border-bottom: 10px solid rgb(211, 211, 211);
+    transition: 0.4s;
+    border-bottom: 10px solid #404040;
     max-width: 30%;
 }
 
 .about-text:hover {
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: #F2F2F2;
+    color: #0D0D0D;
 }
 
 .skills-text {
     padding: 7%;
     border-radius: 0.3rem;
-    transition: 600ms;
-    border-top: 10px solid rgba(83, 83, 83, 1);
+    transition: 0.4s;
+    border-top: 10px solid #0D0D0D;
     max-width: 30%;
-    color: rgba(83, 83, 83, 1);
-}
-
-.skills-text h2 {
-    color: rgb(51, 51, 51);
 }
 
 .skills-text:hover {
-    background-color: rgb(255, 255, 255);
+    background-color: #F2F2F2;
+    color: #0D0D0D;
 }
 
 /* Contact Me Part and Button */
@@ -210,8 +211,8 @@ p {
     align-items: center;
     justify-content: center;
     padding: 4rem;
-    background-color: rgb(83, 83, 83);
-    transition: 600ms;
+    background-color: #0D0D0D;
+    transition: 0.4s;
 }
 
 .contact p {
@@ -219,28 +220,26 @@ p {
     text-align: center;
 }
 
-.contact:hover {
-    background-color: rgba(0, 0, 0, 0.95);
-}
-
 .contact-button {
-    width: 8rem;
+    width: 12rem;
     height: 3rem;
     margin-top: 3rem;
-    background-color: rgb(211, 211, 211);
+    background-color: #BF1744;
     border: none;
     border-radius: 0.3rem;
     font-family: 'Roboto', sans-serif;
     line-height: 28px;
     font-weight: 400;
-    transition: 400ms;
+    transition: 0.4s ease-in-out;
     position: relative;
-    color: rgb(83, 83, 83);
+    font-size: 1rem;
+    color: #F2F2F2;
 }
 
 .contact-button:hover {
     transform: translate(0, -10px);
-    color: rgba(0, 0, 0, 0.95);
+    color: #BF1744;
+    background-color: #F2F2F2;
 }
 
 .contact-button:active {
@@ -248,8 +247,7 @@ p {
 }
 
 .copyrights {
-    color: rgba(83, 83, 83, 1);
-    background-color: rgb(211, 211, 211);
+    background-color: #BF1744;
     width: 100%;
     text-align: center;
     padding-top: 1rem;
@@ -272,7 +270,7 @@ p {
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 0.5rem solid rgba(211, 211, 211, 1);
+        border: 0.5rem solid #BF1744;
         margin-bottom: 4rem;
     }
 
@@ -290,22 +288,20 @@ p {
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        background: linear-gradient(180deg, rgba(83, 83, 83, 1) 56%, rgba(211, 211, 211, 1) 10%);
+        background: linear-gradient(180deg, #0D0D0D 56%, #404040 10%);
         padding: 0;
         margin: 0;
     }
 
     .about-text {
-        border-right: 10px solid rgb(211, 211, 211);
-        background-color: rgba(83, 83, 83, 1);
+        border-right: 10px solid #404040;
         border-bottom: none;
         max-width: 100%;
         margin: 2rem;
     }
 
     .skills-text {
-        border-left: 10px solid rgba(83, 83, 83, 1);
-        background-color: rgba(211, 211, 211, 1);
+        border-left: 10px solid #0D0D0D;
         border-top: none;
         max-width: 100%;
         margin: 2rem;
@@ -350,11 +346,14 @@ p {
 
     .contact-button {
         font-size: 0.8rem;
+        width: 10rem;
+        height: 2.5rem;
     }
 
     .contact-button:hover {
         transform: translate(0, 0px);
-        color: rgb(83, 83, 83);
+        background-color: #BF1744;
+        color: #F2F2F2;
     }
 
     .copyrights {
@@ -378,6 +377,7 @@ p {
 
     .copyrights-links-list li a img {
         width: 28px;
-        transition: 600ms;
+        filter: invert(100%) sepia(49%) saturate(25%) hue-rotate(268deg) brightness(111%) contrast(90%);
+        transition: 0.4s;
     }
 }
