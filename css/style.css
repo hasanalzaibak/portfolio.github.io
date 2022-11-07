@@ -14,7 +14,7 @@
 
 body {
     display: flex;
-    color:  #F2F2F2;
+    color: #F2F2F2;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -22,7 +22,6 @@ h1,
 h2 {
     font-family: 'Josefin Sans', sans-serif;
     color: #8AA6BF;
-
 }
 
 /* Sidebar */
@@ -98,7 +97,6 @@ nav ul li a {
     margin-right: 0.25rem;
     transition: 400ms;
     display: inline-block;
-
 }
 
 nav ul li a:hover {
@@ -270,7 +268,7 @@ p {
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 0.5rem solid #BF1744;
+        border: 0.5rem solid #F2F2F2;
         margin-bottom: 4rem;
     }
 
@@ -348,6 +346,7 @@ p {
         font-size: 0.8rem;
         width: 10rem;
         height: 2.5rem;
+        border-radius: 0.2;
     }
 
     .contact-button:hover {
