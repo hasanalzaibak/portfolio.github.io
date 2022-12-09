@@ -195,6 +195,37 @@ p {
     color: #0D0D0D;
 }
 
+/* My Projects */
+
+.work {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4rem 2rem 0rem 2rem;
+    background-color: #0D0D0D;
+    gap: 5rem;
+}
+
+.work-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.thumbnail {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+    filter: grayscale(0%);
+}
+
+
 /* Contact Me */
 
 .contact {
@@ -202,7 +233,7 @@ p {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 4rem;
+    padding: 0rem 4rem 4rem 4rem;
     background-color: #0D0D0D;
     transition: 0.4s;
 }
@@ -298,6 +329,11 @@ p {
         max-width: 100%;
         margin: 2rem;
     }
+
+    .contact {
+        padding-top: 2rem;
+    }
+
 }
 
 @media only screen and (max-width: 810px) {
@@ -334,6 +370,25 @@ p {
     nav ul li a:hover {
         color: inherit;
         transform: translate(0, 0px);
+    }
+
+    .work {
+        gap: 2rem;
+    }
+
+    .thumbnail {
+        width: 120px;
+        height: 120px;
+    }
+
+    .thumbnail:hover {
+        transform: scale(1);
+        filter: grayscale(100%);
+    }
+
+    .contact {
+
+        padding-bottom: 2rem;
     }
 
     .contact-button {
